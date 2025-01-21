@@ -30,7 +30,9 @@ class MyApp extends StatelessWidget {
                   Container(
                     width: 100,
                     height: 100,
-                    color: Colors.blue,
+                    decoration: BoxDecoration(
+                        borderRadius: BorderRadius.circular(50),
+                        color: Colors.blue),
                   ),
                 ],
               ),
