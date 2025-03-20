@@ -85,7 +85,6 @@ class _TransactionListScreenState extends State {
       body: Column(
         children: [
           SizedBox(height: 10),
-          // Filter Buttons Row
           Row(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
@@ -97,7 +96,6 @@ class _TransactionListScreenState extends State {
             ],
           ),
           SizedBox(height: 10),
-          // Transaction List
           Expanded(
             child:
                 filteredTransactions.isEmpty
