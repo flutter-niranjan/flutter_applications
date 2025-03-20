@@ -16,10 +16,8 @@ class _MovieappState extends State {
   String apiKey = "88922ea3";
 
   void movieSearch(String name) async {
-    if (name.isEmpty) return;
-
     final response = await http.get(
-        Uri.parse("https://www.omdbapi.com/?s=${name.trim()}&apikey=$apiKey"));
+        Uri.parse("https://www.omdbapi.com/?i=${name.trim()}&apikey=$apiKey"));
 
     if (response.statusCode == 200) {
       final data = json.decode(response.body);
